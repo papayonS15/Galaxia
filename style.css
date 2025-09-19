@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  background: radial-gradient(ellipse at center, #1a001a 0%, #000000 100%);
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #d8b3ff;
+}
+
+canvas {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#center-name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4rem;
+  font-weight: bold;
+  color: #b366ff;
+  text-shadow:
+    0 0 10px #b366ff,
+    0 0 20px #d18aff,
+    0 0 30px #d18aff,
+    0 0 40px #a64dff,
+    0 0 70px #a64dff;
+  pointer-events: none;
+  user-select: none;
+}
